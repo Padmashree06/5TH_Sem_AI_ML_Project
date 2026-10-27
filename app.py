@@ -137,6 +137,7 @@ html(
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600&display=swap');
     html, body, [class*="st-"], .stMarkdown, p, li, label, input, button {{font-family: 'Inter', sans-serif;}}
+    [data-testid="stIconMaterial"], .material-symbols-rounded {{font-family: 'Material Symbols Rounded' !important;}}
     header[data-testid="stHeader"], #MainMenu, footer, [data-testid="stSidebar"],
     [data-testid="stSidebarCollapsedControl"], [data-testid="stDecoration"] {{display: none !important;}}
     .block-container {{max-width: 1180px; padding: 2.6rem 2rem 4rem;}}
