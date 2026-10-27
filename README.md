@@ -121,11 +121,9 @@ ecommerce-customer-segmentation/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/ecommerce-customer-segmentation.git
+git clone https://github.com/Padmashree06/5TH_Sem_AI_ML_Project.git
 cd ecommerce-customer-segmentation
 ```
-
-Replace `YOUR-USERNAME` with your GitHub username.
 
 ### 2. Install Dependencies
 
@@ -165,11 +163,6 @@ Although this project focuses on retail customer segmentation, the techniques ca
 - Explore additional clustering evaluation metrics.
 - Develop an interactive dashboard for exploring customer segments.
 - Evaluate the effectiveness of segment-specific marketing strategies.
-
-## License
-
-This project is intended for educational purposes. Refer to the original dataset's licensing terms before redistributing the dataset itself.
-
 ---
 
 **Built with Python, Pandas, Scikit-learn and Jupyter Notebook.**
