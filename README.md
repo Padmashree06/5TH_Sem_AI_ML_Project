@@ -151,14 +151,14 @@ The project includes a **Streamlit** web app (`app.py`) for demonstrating the mo
 
 | Page | What it shows |
 |---|---|
-| 🏠 Overview | Project summary, key metrics, segmentation plot with centroids, pipeline |
-| 📊 Data Exploration | Dataset table, statistics, distributions, gender split, correlation heatmap |
-| 📈 Choosing K | Elbow Method (WCSS) and Silhouette score for K = 1–10 |
-| 🎯 Customer Segments | Named segments with marketing strategies, 2D/3D cluster plots, summary table, CSV download |
-| 🔮 Predict Segment | Enter a new customer's income and spending score to get their segment and recommended strategy |
-| 📂 Batch Prediction | Upload a CSV of customers and segment them all at once |
+| Overview | Project summary, key metrics, segment map with centroids, pipeline |
+| Data | Dataset table, statistics, feature distributions, correlation heatmap |
+| Model | Elbow Method (WCSS) and Silhouette score for K = 1–10, final model configuration |
+| Segments | The five named segments with recommended marketing strategies, 2D/3D cluster plots, CSV download |
+| Predict | Enter a new customer's income and spending score to get their segment and recommended strategy |
+| Batch | Upload a CSV of customers and segment them all at once |
 
-The sidebar slider lets you retrain K-Means with a different number of clusters (default **5**).
+The model uses a fixed **K = 5**, as chosen in the notebook.
 
 ### Run the app
 
