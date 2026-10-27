@@ -145,6 +145,30 @@ Execute the cells sequentially to load the dataset, explore the data, perform cl
 
 The notebook saves the segmentation graph and CSV results in its working directory.
 
+## Interactive Web App (Frontend)
+
+The project includes a **Streamlit** web app (`app.py`) for demonstrating the model.
+
+| Page | What it shows |
+|---|---|
+| 🏠 Overview | Project summary, key metrics, segmentation plot with centroids, pipeline |
+| 📊 Data Exploration | Dataset table, statistics, distributions, gender split, correlation heatmap |
+| 📈 Choosing K | Elbow Method (WCSS) and Silhouette score for K = 1–10 |
+| 🎯 Customer Segments | Named segments with marketing strategies, 2D/3D cluster plots, summary table, CSV download |
+| 🔮 Predict Segment | Enter a new customer's income and spending score to get their segment and recommended strategy |
+| 📂 Batch Prediction | Upload a CSV of customers and segment them all at once |
+
+The sidebar slider lets you retrain K-Means with a different number of clusters (default **5**).
+
+### Run the app
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The app opens at `http://localhost:8501`. The dataset is bundled in `data/Mall_Customers.csv`, so no internet connection is needed.
+
 ## Limitations
 
 - The dataset contains only 200 customer records and may not represent all retail customer populations.
@@ -161,7 +185,6 @@ Although this project focuses on retail customer segmentation, the techniques ca
 - Incorporate Recency, Frequency and Monetary (RFM) features.
 - Compare K-Means with hierarchical clustering and DBSCAN.
 - Explore additional clustering evaluation metrics.
-- Develop an interactive dashboard for exploring customer segments.
 - Evaluate the effectiveness of segment-specific marketing strategies.
 ---
 
